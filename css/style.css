@@ -1,0 +1,77 @@
+.imgcontainer {
+  width: 100%;
+  position: relative;
+  font-family: 'Volkhov', serif;
+  /* color: white; */
+}
+
+#name {
+  position: absolute;
+  font-size: 3.5em;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#profession {
+  position: absolute;
+  font-size: 2.5em;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fab {
+  color:black;
+}
+
+@media screen and (max-width: 1024px) {
+  #name {
+    position: absolute;
+    font-size: 2.7em;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #profession {
+    position: absolute;
+    font-size: 1.7em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #name {
+    position: absolute;
+    font-size: 2em;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #profession {
+    position: absolute;
+    font-size: 1.12em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #name {
+    position: absolute;
+    font-size: .83em;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #profession {
+    position: absolute;
+    font-size: .5em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
