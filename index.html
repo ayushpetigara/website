@@ -3,100 +3,149 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-		<meta name="description" content="Personal Website">
-		<meta name="author" content="Ayush Petigara" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Ayush Petigara">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- New Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Iceberg|Montserrat|Playfair+Display|Rock+Salt|Volkhov" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
-		<link rel="stylesheet" href="css/style.css">
+
     <title>Ayush Petigara</title>
   </head>
   <body>
-		<!--Nav Bar-->
-		<nav class="navbar fixed-top navbar-light">
-    	<a class="navbar-brand" style="font-family:'Rock Salt'" href="index.html">AP</a>
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-	        <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="navbar-collapse collapse" style="font-family:'Volkhov', serif" id="collapsingNavbar">
-        <ul class="navbar-nav text-right">
-          <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-          </li>
-					<li class="nav-item">
-              <a class="nav-link" href="#aboutme">About Me</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
+
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-light">
+        <a class="navbar-brand" href="#">AP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experiences</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#connect">Connect</a>
-          </li>
-        </ul>
-    	</div>
-		</nav>
+            </li>
+          </ul>
+        </div>
+    </nav>
 
-    <!--Display Box-->
-		<div id="home" class="imgcontainer">
-  		<img src="img/scene.png" class="img-fluid" alt="Scene">
-			<div id="name">
-				<p>Ayush Petigara</p>
-			</div>
-			<div id="profession">
-				<p>Undergraduate Student</p>
-			</div>
-		</div>
+    <!-- Background Image -->
+    <section id="top">
+        <img src="img/bg.jpg" alt="background-img" class="img-bg">
+        <div class="name">
+          <p>Ayush Petigara</p>
+        </div>
+    </section>
 
-    <!--About Me-->
-		<div id="aboutme" class="jumbotron jumbotron-fluid">
-		  <div class="container">
-		    <h1 class="display-4 p-2">About Me</h1>
-		    <p class="lead">Hi, My name is Ayush Petigara. I'm an Undergraduate Student studying Computer Science
-				and Minoring in Business-Administration and Cybersecurity.</p>
-					<h3 class="p-3">Skills</h3>
-					<button type="button" class="btn btn-outline-dark	">C</button>
-					<button type="button" class="btn btn-outline-dark">C++</button>
-					<button type="button" class="btn btn-outline-dark">Java</button>
-					<button type="button" class="btn btn-outline-dark">Node.JS</button>
-					<button type="button" class="btn btn-outline-dark">PHP</button>
-					<button type="button" class="btn btn-outline-dark">MySQL</button>
-					<button type="button" class="btn btn-outline-dark">MongoDB</button>
-					<button type="button" class="btn btn-outline-dark">HTML</button>
-					<button type="button" class="btn btn-outline-dark">CSS</button>
-		  </div>
-		</div>
-
-    <!--Projects-->
-    <div id="projects" class="jumbotron jumbotron-fluid bg-white text-right">
-      <div class="container">
-        <h1 class="display-4 p-2">Projects</h1>
-        <p class="lead">Projects coming soon</p>
-      </div>
-    </div>
-
-    <!--Connect with me-->
-    <div id="connect" class="jumbotron jumbotron-fluid">
-      <div class="container p-4">
-        <h1 class="display-4">Connect With Me</h1>
-        <div class="row p-2">
-          <div class="col-md-1">
-            <a target="_blank" href="https://www.linkedin.com/in/ayushpetigara/">
-              <i class="fab fa-linkedin-in display-4" aria-hidden="true"></i>
-            </a>
+    <!-- About me section -->
+    <section class="jumbotron-fluid about" id="about">
+      <div class=" container info">
+        <div class="row">
+          <!-- <div class="col-xl-10 col-lg-8 col-sm-6 col-md-8"> -->
+            <div class="col">
+            <p class="me">About Me</p>
+            <p class="bio">
+              Hello, my name is Ayush Petigara and I am an undergraduate student studying Computer Science (BS), Cybersecurity (Minor)
+              and Business Administration (Minor) at Clemson University. I am passionate about programming and using my obsessive detail
+              attention and curiosity to learn new things to create something that imporves the lives around me. When I am not programming
+              you'll find me watching TV shows, playing different sports or spending time with my family.
+            </p>
           </div>
-          <div class="col-md-1">
-            <a target="_blank" href="https://github.com/ayushpetigara">
-              <i class="fab fa-github display-4" aria-hidden="true"></i>
-            </a>
-          </div>
+          <!-- <div class="col-2 col-xl-2 col-md-2 col-sm-2 profile-pic">
+              <img src="img/profile-pic.jpg" alt="profile pic" class="rounded" height="180" width="180">
+          </div> -->
+        </div>
+      <div class="row pt-5">
+        <div class="col">
+          <p class="me">Skills</p>
+          <button type="button" class="btn btn-outline-light	">C</button>
+          <button type="button" class="btn btn-outline-light">C++</button>
+          <button type="button" class="btn btn-outline-light">Java</button>
+          <button type="button" class="btn btn-outline-light">Node.JS</button>
+          <button type="button" class="btn btn-outline-light">PHP</button>
+          <button type="button" class="btn btn-outline-light">MySQL</button>
+          <button type="button" class="btn btn-outline-light">MongoDB</button>
+          <button type="button" class="btn btn-outline-light">HTML</button>
+          <button type="button" class="btn btn-outline-light">CSS</button>
         </div>
       </div>
     </div>
+    </section>
 
+    <!-- Work expriences section -->
+    <section class="jumbotron-fluid work-exp bg-dark" id="experience">
+      <div class="container wk-info text-right">
+        <p class="me  text-white">Projects</p>
+
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">CUhackit HelloWorld</h5>
+              <p class="card-text">This is the website of first freshman only hackathon organized by CUHackit at Clemson University.</p>
+              <a href="http://cuhack.it/HelloWorld">Click here to view the website</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Skills used: HTML, CSS, Bootstrap and Javascript</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Hayden Riewe</h5>
+              <p class="card-text">This is the personal website of Hayden Riewe.</p>
+              <a href="#">Click here to view the website</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Skills used: HTML, CSS, Bootstrap</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Simple Login & Registration</h5>
+              <p class="card-text">This is simple implementation of the login and registration system with password reset capability.</p>
+              <a href="https://ayush-petigara.000webhostapp.com/login.php">Click here to view the website</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Skills used: HTML, CSS, Bootstrap, PHP, MySQL</small>
+            </div>
+          </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">RESTful TODO api</h5>
+            <p class="card-text">This is an implementation of RESTful todo api that allows used to read, post, update and delete todos.</p>
+            <a href="https://github.com/ayushpetigara/Todo-api">Click here to view the code</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Skills used: NODE.JS, MongoDB</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+
+    <!-- connect section -->
+    <footer id="connect">
+      <div class="container-fluid text-center contact">
+      	<a target="_blank" href="https://www.linkedin.com/in/ayushpetigara/" class="fab fa-linkedin"></a>
+      	<a target="_blank" href="https://github.com/ayushpetigara" class="fab fa-github"></a>
+      	<a target="_blank" href="https://www.instagram.com/ayush_petigara/" class="fab fa-instagram"></a>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
