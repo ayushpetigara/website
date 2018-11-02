@@ -44,9 +44,9 @@ body {
 }
 
 .work-exp {
-  background-color: white;
+  background-color: #222;
   height: auto;
-  background-color: #696970;
+  /* background-color: #696970; */
 }
 
 .wk-info {
@@ -69,7 +69,7 @@ body {
 }
 
 footer {
-  background-color: #222;
+  background-color: #343a40;
   height: 6em;
 }
 .contact {
