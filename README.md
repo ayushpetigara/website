@@ -1,2 +1,2 @@
 # website
-This is my personal website you can view it on ayushpetigara.me
+This is my personal website you can view it here[ayushpetigara.me]
