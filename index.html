@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Personal Website">
     <meta name="author" content="Ayush Petigara">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- C  -->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- New Fonts -->
@@ -18,9 +18,8 @@
     <title>Ayush Petigara</title>
   </head>
   <body>
-
     <!-- Nav Bar -->
-    <nav class="navbar fixed-top navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ml-auto">
         <a class="navbar-brand" href="#">AP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
@@ -28,10 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#top">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experiences</a>
@@ -40,175 +39,280 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#awards">Awards</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#connect">Connect</a>
             </li>
           </ul>
         </div>
     </nav>
 
-    <!-- Background Image -->
-    <section id="top">
-        <img src="img/bg.jpg" alt="background-img" class="img-bg">
-        <div class="name">
-          <p>Ayush Petigara</p>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({
+            placement : 'top',
+            trigger : 'hover'
+        });
+      });
+    </script>
+    <!--Name & Background-->
+    <div class="bg-img-container">
+      <div class="name-container">
+        <p class="name">Ayush Petigara</p>        
+      </div>
+      <img class="img-responsive bg-img" src="./img/bg.jpg"/>
+    </div>
+    <!-- Mobile -->
+    <div class="bg-img-container-mobile">
+        <div class="name-container">
+          <p class="name">Ayush Petigara</p>        
         </div>
-    </section>
+        <img class="img-responsive bg-img" src="./img/bg-mobile.jpg"/>
+    </div>
 
-    <!-- About me section -->
-    <section class="jumbotron-fluid about" id="about">
-      <div class=" container info">
+    <!-- About me -->
+    <div class="jumbotron-fluid page-section" id="about">
+      <div class="container">
         <div class="row">
-          <!-- <div class="col-xl-10 col-lg-8 col-sm-6 col-md-8"> -->
             <div class="col">
-            <p class="me">About Me</p>
-            <p class="bio">
-              Hello, my name is Ayush Petigara and I am an undergraduate student studying Computer Science (BS), Cybersecurity (Minor)
-              and Business Administration (Minor) at Clemson University. I am passionate about programming and using my obsessive detail
-              attention and curiosity to learn new things to create something that imporves the lives around me. When I am not programming
-              you'll find me watching TV shows, playing different sports or spending time with my family.
-            </p>
-          </div>
-          <!-- <div class="col-2 col-xl-2 col-md-2 col-sm-2 profile-pic">
-              <img src="img/profile-pic.jpg" alt="profile pic" class="rounded" height="180" width="180">
-          </div> -->
+                <p class="title">About Me</p>
+                <p class="body-text">
+                    Hello, my name is Ayush Petigara and I am an undergraduate student studying Computer Science (BS), Cybersecurity (Minor)
+                    and Business Administration (Minor) at Clemson University. I am passionate about programming and using my obsessive detail
+                    attention and curiosity to learn new things to create something that imporves the lives around me. When I am not programming
+                    you'll find me watching TV shows, playing different sports or spending time with my family.
+                </p>
+            </div>
         </div>
-      <div class="row pt-5">
-        <div class="col">
-          <p class="me">Skills</p>
-          <button type="button" class="btn btn-outline-light">C</button>
-          <button type="button" class="btn btn-outline-light">C++</button>
-          <button type="button" class="btn btn-outline-light">Java</button>
-          <button type="button" class="btn btn-outline-light">HTML</button>
-          <button type="button" class="btn btn-outline-light">CSS</button>
-          <button type="button" class="btn btn-outline-light">Node.JS</button>
-          <button type="button" class="btn btn-outline-light">SQL</button>
-          <button type="button" class="btn btn-outline-light">Python</button>
+        <!-- spacer -->
+        <div class="p-2"></div>
+        <!-- Skills -->
+        <div class="row">
+            <div class="col">
+                <p class="title">Skills</p>
+                <i class="fab fa-python"></i><i class="px-2"></i>
+                <i class="fab fa-node-js"></i><i class="px-2"></i>
+                <i class="fab fa-html5"></i><i class="px-2"></i>
+                <i class="fab fa-css3"></i><i class="px-2"></i>
+                <i class="fas fa-database"></i><i class="px-2"></i>
+                <i class="fab fa-java"></i><i class="px-2"></i>
+                <img class="pb-3" src="./img/c++.png"/>
+                <img class="pb-3" src="./img/c.png"/>
+            </div>   
         </div>
       </div>
     </div>
-    </section>
 
-    <!-- Work expriences section -->
-    <!-- Work expriences section -->
-    <section class="jumbotron-fluid work-exp bg-dark" id="experience">
-      <div class="container wk-info text-right">
-        <p class="me  text-white">Experiences</p>
-      <div class="card-deck">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Technical Assistant</h5>
-            <p class="card-text">Collaborate with technical and functional users to determine changes needed to simplify and improve the student experience within iRoar.
-              <br><br>Develop web text and variables within the Banner Student Self-Service module using SQL and HTML.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Financial Aid, Clemson University</small>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Software Engineering Intern</h5>
-            <p class="card-text">Develop and collaborate to conceptualize company's vision, action steps and ideas for structuring application.
-              <br><br>Develop server-side application using Node.JS.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Software Department, Canary Replay</small>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">CI: Robot Networks</h5>
-            <p class="card-text">Wrote a Python script for collecting data of Roomba’s motion and IMU.<br><br>Collected data for Roomba's motion and IMU readings using Python scripts.
-              <br><br>Generated reports using Microsoft Excel to present the findings and highlight information collected.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">ECE, Clemson University</small>
-          </div>
-        </div>
-      </div>
+    <!-- Work Experience -->
+    <div class="jumbotron-fluid page-section" id="experience">
+        <div class="container text-right">
+            <p class="title text-white">Experiences</p>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Incoming Software Engineering Intern</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="body-text">I will working as softaware development intern at Malven, PA.</p>                    
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">IT Department, Vanguard</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Technical Assistant</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="body-text">Collaborate with technical and functional users to determine changes needed to simplify and improve the student experience within iRoar.
+                          <br><br>Develop web text and variables within the Banner Student Self-Service module using SQL and HTML.</p>                    
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Financial Aid, Clemson University</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Spacer -->
+            <div class="py-3 non-mobile"></div>
+            <div class="py-1 mobile"></div>
 
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Software Developer Intern</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="body-text">Develop and collaborate to conceptualize company's vision, action steps and ideas for structuring application.
+                          <br><br>Develop server-side application using Node.JS.</p>                    
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Software Department, Crescanary</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">CI: Robot Networks</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="body-text">Wrote a Python script for collecting data of Roomba’s motion and IMU.<br><br>Collected data for Roomba's motion and IMU readings using Python scripts.
+                          <br><br>Generated reports using Microsoft Excel to present the findings and highlight information collected.</p>                    
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">ECE, Clemson University</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </section>
+
     <!-- Projects -->
-    <section class="jumbotron-fluid work-exp" id="projects">
-      <div class="container wk-info">
-        <p class="me  text-white">Projects</p>
+    <div class="jumbotron-fluid page-section" id="projects">
+        <div class="container">
+            <p class="title">Projects</p>
+            <div class="card-deck">
+              <div class="card dark-card">
+                <div class="card-header">
+                    <h5 class="card-title">Blind D8</h5>
+                </div>
+                <div class="card-body">
+                  <p class="body-text">Created an audio-based wrapper surrounding the popular dating application Tinder which effectively allows visually impaired users to interact with the application using voice.</p>
+                  <a href="https://github.com/ayushpetigara/BlindD8" class="card-link">Click here to view code</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Skills used: AWS Lambda, Google Speech API, Python, Flask, Alexa Skill Kit</small>
+                  </div>
+              </div>
+              <div class="card dark-card">
+                <div class="card-header">
+                    <h5 class="card-title">True Résumé</h5>
+                </div>
+                <div class="card-body">
+                  <p class="body-text">Created an image processing API that helps in reducing subconscious bias in hiring process.</p>
+                  <a href="https://github.com/ayushpetigara/TrueResume" class="card-link">Click here to view code</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Skills used: AWS Comprehend, Google Vision API, Python, Flask, Pillow</small>
+                </div>
+              </div>
+              <div class="card dark-card">
+                <div class="card-header">
+                    <h5 class="card-title">Guardian Angel</h5>
+                </div>
+                <div class="card-body">
+                  <p class="body-text">Created an web application that effectively allows to overlook a friend's walk home.</p>
+                  <a href="https://github.com/ayushpetigara/Guardian-Angel" class="card-link">Click here to view code</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Skills used: Agora.io Voice, Mapbox API, SnapKit Login API, Python, Flask</small>
+                </div>
+              </div>
+            </div>
+            <!-- Spacer -->
+            <div class="py-1 mobile"></div>
+            <div class="py-3 non-mobile"></div>
+            <div class="card-deck">
+              <div class="card dark-card">
+                <div class="card-header">
+                  <h5 class="card-title">Chat Room</h5>
+                </div>
+                <div class="card-body">
+                  <p class="body-text">Created a chat app using web sockets which allows users to have real time communication by joining rooms and sharing their location.</p>
+                  <a href="https://pure-bayou-79934.herokuapp.com/" class="card-link">Check out live demo here</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Skills used: Node.JS, Socket.IO</small>
+                </div>
+              </div>
+              <div class="card dark-card">
+                <div class="card-header">
+                  <h5 class="card-title">CUhackit</h5>
+                </div>
+                <div class="card-body">
+                  <p class="body-text">Developed websites for Clemson University's hackathons.</p>
+                  <a href="https://cuhack.it" class="card-link">Check out live website here</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Skills used: HTML5, CSS3, Bootstrap 4, JavaScript</small>
+                </div>
+              </div>
+              <div class="card dark-card">
+                <div class="card-header">
+                  <h5 class="card-title">Hayden Riewe's Personal Website</h5>
+                </div>
+                <div class="card-body">
+                  <p class="body-text">Developed personal website for Hayden Riewe.</p>
+                  <a href="https://hrcyber.tech/" class="card-link">Check out live website here</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Skills used: HTML5, CSS3, Bootstrap 4</small>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Awards -->
+    <div class="jumbotron-fluid page-section" id="awards">
+      <div class="container text-right">
+        <p class="title text-white">Awards</p>
         <div class="card-deck">
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">BlindD8</h5>
-              <p class="card-text">Created an audio-based wrapper surrounding the popular dating application Tinder which effectively allows visually impaired users to interact with the application using voice.</p>
-              <a href="https://github.com/ayushpetigara/BlindD8">Click here to view the code</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Skills used: AWS Lambda, Google Speech API, Python, Flask, Alexa Skill Kit</small>
-            </div>
+              <div class="card-header">
+                  <h5 class="card-title">Winner of Diversified Challenge</h5>
+              </div>
+              <div class="card-body">
+                  <p class="body-text">Best use of integrated device.</p>                    
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">HackGSU, Georgia State University</small>
+              </div>
           </div>
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Chat Room</h5>
-              <p class="card-text">Developed a chat app using web sockets which allows users to have real time communication by joining rooms and sharing their location.</p>
-              <a href="https://github.com/ayushpetigara/chat-app">Click here to view the code</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Skills used: Node.JS, SocketIO</small>
-            </div>
+              <div class="card-header">
+                  <h5 class="card-title">Winner of GCP Challenge</h5>
+              </div>
+              <div class="card-body">
+                  <p class="body-text">Best use of google cloud platform.</p>                    
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">Auburn Hacks, Auburn University</small>
+              </div>
           </div>
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">CUhackit HelloWorld</h5>
-              <p class="card-text">This is the website of first freshman only hackathon organized by CUHackit at Clemson University.</p>
-              <a href="http://cuhack.it/HelloWorld">Click here to view the website</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Skills used: HTML, CSS, Bootstrap and Javascript</small>
-            </div>
+              <div class="card-header">
+                  <h5 class="card-title">Winner of Snap Kit Challenge</h5>
+              </div>
+              <div class="card-body">
+                  <p class="body-text">Best use of Snapchat Developer API's.</p>                    
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">UGA Hacks4, University of Georgia</small>
+              </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="card-deck pt-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Hayden Riewe</h5>
-              <p class="card-text">This is the personal website of Hayden Riewe.</p>
-              <a href="http://hrcyber.tech">Click here to view the website</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Skills used: HTML, CSS, Bootstrap</small>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Simple Login & Registration</h5>
-              <p class="card-text">This is simple implementation of the login and registration system with password reset capability.</p>
-              <a href="https://ayush-petigara.000webhostapp.com/login.php">Click here to view the website</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Skills used: HTML, CSS, Bootstrap, PHP, MySQL</small>
-            </div>
-          </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">RESTful TODO api</h5>
-            <p class="card-text">This is an implementation of RESTful todo api that allows used to read, post, update and delete todos.</p>
-            <a href="https://github.com/ayushpetigara/Todo-api">Click here to view the code</a>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Skills used: NODE.JS, MongoDB</small>
-          </div>
+    <!-- Github Activity -->
+    <div class="jumbotron-fluid page-section" id="gh-activity">
+      <div class="container">
+        <p class="title">GitHub Activity</p>
+        <div class="text-center py-1 mobile">
+            <img src="http://ghchart.rshah.org/666666/ayushpetigara" alt="Ayush's GitHub's activity" width="320" height="50">
         </div>
-
+        <div class="text-center py-1 non-mobile">
+            <img src="http://ghchart.rshah.org/666666/ayushpetigara" alt="Ayush's GitHub's activity">
+        </div>
       </div>
+    </div>
 
-      </div>
-    </section>
-
-    <!-- connect section -->
+    <!-- Footer -->
     <footer id="connect">
-      <div class="container-fluid text-center contact bg-dark">
-      	<a target="_blank" href="https://www.linkedin.com/in/ayushpetigara/" class="fab fa-linkedin"></a>
-      	<a target="_blank" href="https://github.com/ayushpetigara" class="fab fa-github"></a>
-      	<a target="_blank" href="https://www.instagram.com/ayush_petigara/" class="fab fa-instagram"></a>
+      <div class="container text-center">
+        <a target="_blank" href="https://www.linkedin.com/in/ayushpetigara/" class="fab fa-linkedin contact px-1"></a>
+        <a target="_blank" href="https://github.com/ayushpetigara" class="fab fa-github contact px-1"></a>
+        <a target="_blank" href="https://www.instagram.com/ayush_petigara/" class="fab fa-instagram contact px-1"></a>
       </div>
     </footer>
     <!-- Optional JavaScript -->
