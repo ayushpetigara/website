@@ -1,8 +1,9 @@
-html {
-    scroll-behavior: smooth;
-}
+/*
+Author: Ayush Petigara
+Created: 03/23/2019
+ */
 body {
-    font-family: 'Montserrat', sans-serif !important; 
+    font-family: 'Montserrat', sans-serif !important;
 }
 /* Nav bar */
 .navbar-brand {
@@ -201,7 +202,7 @@ body {
     .bg-img-container {
         display: none;
     }
-    
+
     .bg-img-container-mobile {
         position: relative;
         display: inline-block;
@@ -238,5 +239,5 @@ body {
         padding-left: 1em;
         padding-bottom: 5em;
         padding-right: 1em;
-    }   
+    }
 }
