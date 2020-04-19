@@ -2,79 +2,145 @@
 Author: Ayush Petigara
 Created: 03/23/2019
  */
+
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
+
+
 /* Nav bar */
+
 .navbar-brand {
     font-family: 'Rock Salt' !important;
     color: white !important;
     -webkit-text-stroke: .5px black;
 }
+
 .navbar-toggler {
     color: white !important;
 }
+
 .nav-item {
     font-family: 'Volkhov', monospace !important;
     text-align: right;
 }
+
 .nav-link {
     color: white !important;
     -webkit-text-stroke: .5px black;
 }
+
 .fa-bars {
     -webkit-text-stroke: .5px black;
 }
 
+
 /* About Me */
+
 #about {
     background-color: white;
     height: auto;
 }
 
-/* Experiences */
-#experience {
+
+/* education */
+
+#education {
     background-color: #222;
     height: auto;
+    margin-top: -1%;
 }
+
+
+/* Experiences */
+
+#experience {
+    background-color: white;
+    height: auto;
+}
+
 
 /* Projects */
+
 #projects {
-    background-color: white;
+    background-color: #222;
     height: auto;
+    margin-top: -1%;
 }
+
 
 /* Awards */
-#awards {
-    background-color: #222;
-    height: auto;
-}
 
-/* GitHub Activity */
-#gh-activity {
+#awards {
     background-color: white;
     height: auto;
 }
 
+
+/* GitHub Activity */
+
+#gh-activity {
+    background-color: #222;
+    height: auto;
+}
+
+
+/* Connect */
+
+#get-in-touch {
+    background-color: #222;
+    height: auto;
+    margin-top: -1%;
+}
+
+
 /* Footer */
+
 #connect {
     background-color: #222;
-    padding:2em;
+    padding: 2em;
     height: 6em;
 }
+
 .contact {
     color: white;
 }
+
 .contact:hover {
-    color:grey;
+    color: grey;
     text-decoration: none;
 }
 
+.force-bottom {
+    margin-bottom: -50px;
+}
+
+
+/* Light footer */
+
+#light-connect {
+    background-color: white;
+    padding: 2em;
+    height: 6em;
+}
+
+.light-contact {
+    color: #222;
+}
+
+.light-contact:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+
 /* title and body texts */
+
 .title {
     font-family: 'Playfair Display', serif !important;
     font-size: 4rem;
 }
+
 .body-text {
     font-size: 1.2rem;
 }
@@ -82,9 +148,11 @@ body {
 .fab {
     font-size: 2.5em;
 }
+
 .fa-database {
     font-size: 2.4em;
 }
+
 .dark-card {
     background-color: #222 !important;
     color: white;
@@ -95,7 +163,7 @@ body {
         font-size: 10vw;
         -webkit-text-stroke: 2px black;
     }
-    .bg-img-container-mobile{
+    .bg-img-container-mobile {
         display: none;
     }
     /* Name and background image */
@@ -134,15 +202,16 @@ body {
         padding: 5em;
     }
 }
+
 @media only screen and (max-width: 1250px) and (min-width: 750px) {
     .name {
-        font-size:10vw;
+        font-size: 10vw;
         -webkit-text-stroke: 1px black;
     }
     .body-text {
         font-size: 1.1rem;
     }
-    .bg-img-container-mobile{
+    .bg-img-container-mobile {
         display: none;
     }
     /* Name and background image */
@@ -197,12 +266,10 @@ body {
     .body-text {
         font-size: .9rem;
     }
-
     /* Name and background image */
     .bg-img-container {
         display: none;
     }
-
     .bg-img-container-mobile {
         position: relative;
         display: inline-block;
@@ -239,5 +306,21 @@ body {
         padding-left: 1em;
         padding-bottom: 5em;
         padding-right: 1em;
+    }
+    /* education */
+    #education {
+        background-color: #222;
+        height: auto;
+        margin-top: -2%;
+    }
+    #projects {
+        background-color: #222;
+        height: auto;
+        margin-top: -2%;
+    }
+    #get-in-touch {
+        background-color: #222;
+        height: auto;
+        margin-top: -2%;
     }
 }
