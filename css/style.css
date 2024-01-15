@@ -50,20 +50,14 @@ body {
     height: auto;
 }
 
-/* GitHub Activity */
-#gh-activity {
-    background-color: white;
-    height: auto;
-}
-
 /* Footer */
 #connect {
-    background-color: #222;
+    background-color: white;
     padding:2em;
     height: 6em;
 }
 .contact {
-    color: white;
+    color: #222;
 }
 .contact:hover {
     color:grey;
